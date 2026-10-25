@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VPN для Windows 10 и 11: WireGuard для ПК и ноутбука — Muhomor VPN</title>
+  <meta name="description" content="VPN для компьютера на Windows 10 и 11: почему WireGuard, как включить автозапуск и kill switch на ПК и ноутбуке. Muhomor VPN: 3 дня бесплатно, без подписки." />
+  <link rel="canonical" href="https://telegii.ru/vpn/vpn-dlya-windows" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#1d8f45" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Muhomor VPN" />
+  <meta property="og:title" content="VPN для Windows 10 и 11: WireGuard для ПК и ноутбука — Muhomor VPN" />
+  <meta property="og:description" content="VPN для компьютера на Windows 10 и 11: почему WireGuard, как включить автозапуск и kill switch на ПК и ноутбуке. Muhomor VPN: 3 дня бесплатно, без подписки." />
+  <meta property="og:url" content="https://telegii.ru/vpn/vpn-dlya-windows" />
+  <meta property="og:image" content="https://telegii.ru/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VPN для Windows 10 и 11: WireGuard для ПК и ноутбука — Muhomor VPN" />
+  <meta name="twitter:description" content="VPN для компьютера на Windows 10 и 11: почему WireGuard, как включить автозапуск и kill switch на ПК и ноутбуке. Muhomor VPN: 3 дня бесплатно, без подписки." />
+  <meta name="twitter:image" content="https://telegii.ru/og-image.jpg" />
+  <meta property="article:published_time" content="2026-06-19" />
+  <meta property="article:modified_time" content="2026-10-22" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://telegii.ru/#organization","name":"Muhomor VPN","alternateName":"Мухомор VPN","legalName":"ИП Каимов Эмиль Линурович","taxID":"910402940990","url":"https://telegii.ru/","logo":{"@type":"ImageObject","url":"https://telegii.ru/site-assets/logo.jpg","width":800,"height":800},"telephone":"+7 800 555-21-81","sameAs":["https://t.me/muhomorvpn_bot"],"contactPoint":[{"@type":"ContactPoint","contactType":"customer support","url":"https://t.me/muhomorvpn_bot","telephone":"+7 800 555-21-81","availableLanguage":"ru"}]},{"@type":"WebSite","@id":"https://telegii.ru/#website","url":"https://telegii.ru/","name":"Muhomor VPN","inLanguage":"ru","publisher":{"@id":"https://telegii.ru/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://telegii.ru/"},{"@type":"ListItem","position":2,"name":"Справочник VPN","item":"https://telegii.ru/vpn"},{"@type":"ListItem","position":3,"name":"VPN для устройств","item":"https://telegii.ru/vpn#devices"},{"@type":"ListItem","position":4,"name":"VPN для Windows: ПК и ноутбук на WireGuard","item":"https://telegii.ru/vpn/vpn-dlya-windows"}]},{"@type":"Article","@id":"https://telegii.ru/vpn/vpn-dlya-windows#article","mainEntityOfPage":{"@type":"WebPage","@id":"https://telegii.ru/vpn/vpn-dlya-windows"},"headline":"VPN для Windows: ПК и ноутбук на WireGuard","description":"VPN для компьютера на Windows 10 и 11: почему WireGuard, как включить автозапуск и kill switch на ПК и ноутбуке. Muhomor VPN: 3 дня бесплатно, без подписки.","inLanguage":"ru","articleSection":"VPN для устройств","keywords":"vpn для windows, vpn для пк, vpn для компьютера windows 10 11, vpn для ноутбука, wireguard windows","wordCount":1540,"image":["https://telegii.ru/og-image.jpg"],"datePublished":"2026-06-19","dateModified":"2026-10-22","author":{"@id":"https://telegii.ru/#organization"},"publisher":{"@id":"https://telegii.ru/#organization"}},{"@type":"FAQPage","@id":"https://telegii.ru/vpn/vpn-dlya-windows#faq","mainEntity":[{"@type":"Question","name":"Работает ли WireGuard на Windows 10 и Windows 11?","acceptedAnswer":{"@type":"Answer","text":"Да, официальный клиент поддерживает обе версии на процессорах x64 и ARM64. Установщик MSI один, отдельных редакций для 10 и 11 нет."}},{"@type":"Question","name":"Нужны ли права администратора?","acceptedAnswer":{"@type":"Answer","text":"Да — для установки программы и для управления туннелями: WireGuard ставит драйвер и создаёт системные службы. Обычные пользователи без прав администратора по умолчанию туннели не видят."}},{"@type":"Question","name":"Можно ли использовать один конфиг на ПК и ноутбуке?","acceptedAnswer":{"@type":"Answer","text":"Не стоит: ключ у конфига один, и при одновременной работе сервер будет переключаться между машинами. Доступ рассчитан на 5 устройств — выпустите ноутбуку отдельный конфиг в разделе «Устройства»."}},{"@type":"Question","name":"Как сделать, чтобы VPN включался сам при загрузке Windows?","acceptedAnswer":{"@type":"Answer","text":"Ничего дополнительно делать не нужно: активный туннель работает как служба с автозапуском и поднимается при загрузке до входа в систему. Чтобы отключить автозапуск, деактивируйте туннель перед выключением."}},{"@type":"Question","name":"Почему в трее значок сети с предупреждением, хотя интернет есть?","acceptedAnswer":{"@type":"Answer","text":"Индикатор Windows проверяет сеть своим способом и иногда не видит доступ через туннель. Это косметическая особенность — если сайты открываются, всё в порядке."}},{"@type":"Question","name":"VPN для ноутбука сильно сажает батарею?","acceptedAnswer":{"@type":"Answer","text":"WireGuard молчит в простое и работает на уровне ядра, поэтому заметного влияния на автономность нет. Расход растёт вместе с самим трафиком, а не из-за шифрования."}}]}]}</script>
+  
+  <style>:root{--bg:#f7f8f6;--paper:#fff;--text:#101713;--muted:#5d6861;--line:#dce4de;--green:#1d8f45;--green-2:#0f6e34;--soft:#eef4ef;--radius:8px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}.wrap{width:min(1080px,calc(100% - 32px));margin:0 auto}
+.top{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;font-size:17px}.brand img{width:40px;height:40px;border-radius:8px}
+.nav{display:flex;gap:16px;align-items:center;color:var(--muted);font-size:14px}.nav a{text-decoration:none}.nav a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:var(--radius);text-decoration:none;font-weight:800;border:1px solid var(--line);background:#fff;color:var(--text);cursor:pointer}.btn.green{background:var(--green);border-color:var(--green);color:#fff;box-shadow:0 14px 30px rgba(29,143,69,.2)}.btn.green:hover{background:var(--green-2)}
+.crumbs{font-size:13px;color:var(--muted);padding:14px 0 0}.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}.crumbs li+li:before{content:"›";margin-right:6px;color:#9aa89f}.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start;padding:26px 0 30px}.hero h1{margin:0 0 14px;font-size:clamp(34px,5vw,56px);line-height:1.02;letter-spacing:-.01em}.lead{font-size:clamp(18px,2vw,21px);color:#39453e;margin:0;max-width:720px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.legal{font-size:13px;color:var(--muted);margin:14px 0 0}.meta{font-size:13px;color:var(--muted);margin-top:8px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 18px 45px rgba(15,35,22,.08)}.panel h2{font-size:19px;margin:0 0 12px}.points{display:grid;gap:8px}.point{padding:11px 12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--soft);font-weight:700;font-size:15px}
+.content{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;padding:6px 0 60px;align-items:start}.article{min-width:0}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin-bottom:18px}.toc strong{display:block;margin-bottom:8px;font-size:15px}.toc ol{margin:0;padding-left:20px;font-size:15px;line-height:1.5}.toc a{color:var(--muted);text-decoration:none}.toc a:hover{color:var(--text);text-decoration:underline}
+.block{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:16px}.block h2{margin:0 0 12px;font-size:28px;line-height:1.12}.block h3{margin:18px 0 8px;font-size:20px;line-height:1.25}.block p{margin:0 0 12px;color:#2b3630}.block p:last-child{margin-bottom:0}.block ul,.block ol{margin:0 0 12px;padding-left:24px;color:#2b3630}.block li{margin:4px 0}.block a{color:var(--green-2)}.block code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92em;background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px;word-break:break-word}
+.block pre{margin:0 0 12px;padding:14px;background:#0f1a13;color:#e6efe8;border-radius:var(--radius);overflow:auto;font-size:14px;line-height:1.5}.block pre code{background:none;border:0;color:inherit;padding:0}
+.tbl{overflow-x:auto;margin:0 0 12px}.block table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}.block th,.block td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}.block th{background:var(--soft);font-weight:800}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;margin:0 0 8px}.faq summary{font-weight:800;cursor:pointer;list-style:none;position:relative;padding-right:28px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";position:absolute;right:0;top:-2px;font-size:22px;color:var(--green)}.faq details[open] summary:after{content:"–"}.faq details p{color:#39453e;margin:10px 0 0}
+.ready{background:var(--soft);border:1px solid #cfe3d5;border-radius:var(--radius);padding:22px 26px;margin:0 0 16px}.ready h2{margin:0 0 8px;font-size:22px;line-height:1.2}.ready p{margin:0 0 14px;color:#2b3630}.ready .fine{margin:10px 0 0;font-size:14px;color:var(--muted)}
+.offer{padding:0 0 22px}.offer h2{font-size:28px;line-height:1.12;margin:0 0 12px}.plans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.plan-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:4px}.plan-card.main{border-color:var(--green);box-shadow:0 14px 30px rgba(29,143,69,.12)}.plan-days{font-weight:800;color:var(--muted);font-size:15px}.plan-price{font-size:36px;font-weight:900;line-height:1.05}.plan-day{font-size:14px;color:var(--muted);margin-bottom:12px}.plan-card .btn{margin-top:auto}.offer-note{font-size:14px;color:var(--muted);margin:12px 0 0;max-width:820px}.offer-note a{color:var(--green-2);font-weight:700}
+.cta{background:linear-gradient(135deg,#123d22,#1d8f45);color:#fff;border-radius:var(--radius);padding:26px;margin:0 0 16px}.cta h2{margin:0 0 8px;font-size:26px}.cta p{margin:0 0 16px;opacity:.92}.cta .btn{background:#fff;color:var(--green-2);border-color:#fff}.cta .btn:hover{background:#eef4ef}.cta .plans{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px;font-size:14px}.cta .plans span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 11px}
+.side{position:sticky;top:18px;display:grid;gap:12px}.side .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px}.side h3{margin:0 0 10px;font-size:16px}.related{display:grid;gap:8px;font-size:15px}.related a{color:var(--muted);text-decoration:none;line-height:1.35}.related a:hover{color:var(--text);text-decoration:underline}
+.cats{display:flex;flex-wrap:wrap;gap:8px}.cats a{font-size:13px;text-decoration:none;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:#fff}.cats a:hover,.cats a.active{color:var(--green-2);border-color:var(--green)}
+footer{padding:28px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-bottom:18px}footer h4{margin:0 0 8px;font-size:14px;color:var(--text)}footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}footer a{text-decoration:none}footer a:hover{text-decoration:underline}
+.hub-hero{padding:34px 0 10px}.hub-hero h1{font-size:clamp(36px,6vw,66px);line-height:1;margin:0 0 14px}.hub-hero p{max-width:760px;color:#39453e;font-size:20px;margin:0}
+.cat-section{padding:22px 0 6px}.cat-section h2{font-size:28px;margin:0 0 4px}.cat-section .cat-desc{color:var(--muted);margin:0 0 16px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card-link{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;text-decoration:none;color:inherit;box-shadow:0 10px 30px rgba(15,35,22,.05);display:flex;flex-direction:column;gap:8px}.card-link:hover{border-color:var(--green)}.card-link h3{font-size:19px;line-height:1.15;margin:0}.card-link p{margin:0;color:var(--muted);font-size:14px;flex:1}.card-link .more{font-size:13px;color:var(--green-2);font-weight:700}
+@media(max-width:860px){.plans-grid{grid-template-columns:1fr}.hero,.content{grid-template-columns:1fr}.nav a:not(.btn){display:none}.side{position:static}.grid{grid-template-columns:1fr}.block{padding:20px 18px}.block h2{font-size:24px}.hero{padding-top:18px}.hero-actions .btn{width:100%}body{font-size:16px}}</style>
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img src="/site-assets/logo-96.jpg" alt="Muhomor VPN" width="40" height="40" fetchpriority="high" /><span>Мухомор VPN</span></a>
+    <nav class="nav" aria-label="Навигация">
+      <a href="/vpn">Все статьи</a>
+      <a href="/downloads/wireguard/">Скачать WireGuard</a>
+      <a href="https://t.me/muhomorvpn_bot?start=w_site">Мой доступ</a>
+      <a class="btn green" href="https://t.me/muhomorvpn_bot?start=w_site">3 дня бесплатно</a>
+    </nav>
+  </header>
+  <main>
+    <div class="wrap crumbs"><ol><li><a href="/">Главная</a></li><li><a href="/vpn">Справочник VPN</a></li><li><a href="/vpn#devices">VPN для устройств</a></li><li aria-current="page">VPN для Windows: ПК и ноутбук на WireGuard</li></ol></div>
+    <section class="wrap hero">
+      <div>
+        <h1>VPN для Windows: ПК и ноутбук на WireGuard</h1>
+        <p class="lead">VPN для Windows — это приложение WireGuard (установщик MSI) и готовый конфиг: импорт занимает минуту, туннель работает как системная служба и поднимается сам при загрузке. Ниже — что важно для ПК и ноутбука, как включить kill switch, чем отличается приложение от VPN на роутере и с чего начать бесплатно.</p>
+        <div class="hero-actions">
+          <a class="btn green" href="https://t.me/muhomorvpn_bot?start=w_site">Попробовать 3 дня бесплатно</a>
+          <a class="btn" href="https://t.me/muhomorvpn_bot?start=w_site">Проверить мой доступ</a>
+        </div>
+        <p class="legal">Используйте VPN законно и с уважением к правилам сервисов и сетей, к которым подключаетесь.</p>
+        <p class="meta">Обновлено 22 октября 2026 · 9 мин чтения · <a href="/vpn#devices">VPN для устройств</a></p>
+      </div>
+      <aside class="panel">
+        <h2>Коротко</h2>
+        <div class="points"><div class="point">MSI для Windows 10 и 11</div><div class="point">Автозапуск службы и kill switch</div><div class="point">3 дня бесплатно, до 5 устройств</div></div>
+      </aside>
+    </section>
+    
+    <section class="wrap content">
+      <article class="article" itemscope itemtype="https://schema.org/Article">
+        <nav class="toc" aria-label="Содержание"><strong>Содержание</strong><ol><li><a href="#chto-vazhno-v-vpn-dlya-kompyutera-na-windows-10-i-11">Что важно в VPN для компьютера на Windows 10 и 11</a></li><li><a href="#pochemu-wireguard-horosh-na-windows">Почему WireGuard хорош на Windows</a></li><li><a href="#kak-podklyuchit-vpn-na-windows-za-5-minut">Как подключить VPN на Windows за 5 минут</a></li><li><a href="#osobennosti-windows-avtozapusk-kill-switch-i-noutbuk">Особенности Windows: автозапуск, kill switch и ноутбук</a></li><li><a href="#tarify-muhomor-vpn-dlya-pk-i-noutbuka">Тарифы Muhomor VPN для ПК и ноутбука</a></li><li><a href="#vpn-prilozhenie-na-pk-ili-na-routere">VPN-приложение на ПК или на роутере</a></li><li><a href="#chek-list-bezopasnosti-dlya-vpn-na-windows">Чек-лист безопасности для VPN на Windows</a></li><li><a href="#tipichnye-problemy-na-windows-i-chto-delat">Типичные проблемы на Windows и что делать</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li></ol></nav>
+        <section class="block" id="chto-vazhno-v-vpn-dlya-kompyutera-na-windows-10-i-11"><h2>Что важно в VPN для компьютера на Windows 10 и 11</h2><p>У VPN для Windows требования другие, чем у VPN для телефона. Батарея важна только для ноутбука, зато на первый план выходят стабильность при выходе из сна, автозапуск без участия пользователя, поведение DNS в Windows и вопрос прав: клиент ставится от администратора и получает доступ ко всему сетевому стеку. Отсюда четыре критерия.</p>
+<p><strong>Реализация протокола.</strong> На Windows VPN может работать в пользовательском режиме через виртуальный адаптер или на уровне ядра. Второй вариант быстрее и меньше нагружает процессор — это заметно на слабых ноутбуках и при крупных загрузках.</p>
+<p><strong>Автономность.</strong> VPN на рабочем ПК должен подниматься при загрузке системы, ещё до входа пользователя, и сам восстанавливаться после сна ноутбука. Иначе часть трафика уйдёт в открытую сеть, пока вы вводите пароль.</p>
+<p><strong>Утечки DNS.</strong> Windows умеет отправлять DNS-запросы через все сетевые интерфейсы сразу. Хороший клиент это учитывает и при включённом kill switch не выпускает запросы мимо туннеля.</p>
+<p><strong>Чистота установщика.</strong> Никаких «бесплатных VPN» с рекламой, тулбарами и непонятными службами в автозагрузке. Клиент — с открытым исходным кодом и подписанным установщиком, доступ — от сервиса, условия которого вам понятны.</p></section>
+        <section class="block" id="pochemu-wireguard-horosh-na-windows"><h2>Почему WireGuard хорош на Windows</h2><p>WireGuard для Windows — официальный клиент с открытым кодом и установщиком MSI; он поддерживает Windows 10 и 11 на x64 и ARM64, есть сборки и для более старых версий. Начиная с версии 0.4 клиент использует WireGuardNT — реализацию протокола в ядре Windows, поэтому шифрование мало нагружает процессор и не становится узким местом даже на скромном ноутбуке. Страница проекта — <a href="https://www.wireguard.com/" rel="noopener">wireguard.com</a>.</p>
+<ul>
+<li><strong>Работает как служба Windows.</strong> Каждый туннель — отдельная системная служба. Включённый туннель поднимается при загрузке ещё до входа в систему и не зависит от того, открыто ли окно приложения.</li>
+<li><strong>Переживает сон и смену сети.</strong> После пробуждения ноутбука туннель не «висит»: первое же рукопожатие восстанавливает связь. Переход с Ethernet на Wi-Fi проходит без ручного переподключения.</li>
+<li><strong>Встроенный kill switch.</strong> В свойствах туннеля есть флажок, который перекрывает весь трафик вне туннеля средствами Windows Filtering Platform — включая DNS-запросы.</li>
+<li><strong>Ничего лишнего.</strong> Программа занимает несколько мегабайт, не показывает рекламу и не требует учётной записи.</li>
+</ul>
+<div class="tbl"><table><thead><tr><th>Критерий</th><th>WireGuard</th><th>OpenVPN</th><th>Встроенный VPN Windows (IKEv2, SSTP, L2TP)</th></tr></thead><tbody>
+<tr><td>Реализация</td><td>Драйвер ядра WireGuardNT</td><td>Пользовательский режим, адаптер TAP или Wintun</td><td>Встроен в систему</td></tr>
+<tr><td>Настройка</td><td>Импорт файла .conf</td><td>Файл .ovpn и сертификаты</td><td>Ручной ввод параметров или скрипт</td></tr>
+<tr><td>Автозапуск</td><td>Служба, стартует до входа</td><td>Служба или автозагрузка клиента</td><td>Подключение при входе в систему</td></tr>
+<tr><td>Kill switch</td><td>Флажок в свойствах туннеля</td><td>Зависит от клиента</td><td>Нет</td></tr>
+<tr><td>Сон ноутбука</td><td>Восстановление по первому пакету</td><td>Переустановка сессии</td><td>Переподключение</td></tr>
+</tbody></table></div></section><section class="ready"><h2>Готовый конфиг WireGuard для Windows</h2><p>Свой сервер поднимать не обязательно. Получите файл .conf на e-mail за минуту и подключитесь по шагам из этой статьи. 3 дня бесплатно, без карты и автосписаний.</p><a class="btn green" href="https://t.me/muhomorvpn_bot?start=w_site">Получить конфиг для Windows</a></section>
+        <section class="block" id="kak-podklyuchit-vpn-na-windows-za-5-minut"><h2>Как подключить VPN на Windows за 5 минут</h2><p>В Muhomor VPN используется WireGuard, поэтому на ПК не нужно ничего настраивать руками — только установить программу и импортировать готовый файл:</p>
+<ol>
+<li><strong>Скачайте установщик MSI</strong> со <a href="/downloads/wireguard/">страницы загрузок</a> — ссылка ведёт на официальный сайт WireGuard. Установите программу: потребуются права администратора.</li>
+<li><strong>Оформите пробный доступ</strong> на <a href="/">главной</a>: только e-mail, 3 дня бесплатно, без карты и автосписаний.</li>
+<li><strong>Сохраните файл <code>.conf</code></strong> из письма в надёжную папку — не в общие «Загрузки» на семейном компьютере.</li>
+<li><strong>Импортируйте туннель.</strong> Откройте WireGuard, нажмите «Импорт туннелей из файла» и выберите конфиг. Файл можно и просто перетащить в окно программы.</li>
+<li><strong>Нажмите «Подключить».</strong> Статус сменится на «Активно», появятся время последнего рукопожатия и счётчики полученных и отправленных данных.</li>
+<li><strong>Проверьте результат:</strong> сайты должны видеть IP сервера, а не вашего провайдера.</li>
+</ol>
+<p>Подробная инструкция с разбором окон программы — <a href="/vpn/nastroit-wireguard-na-windows">как настроить WireGuard на Windows</a>. Если письмо потерялось, раздел «Мой доступ» на главной покажет срок действия и вышлет конфиг повторно — на e-mail или в Telegram.</p></section>
+        <section class="block" id="osobennosti-windows-avtozapusk-kill-switch-i-noutbuk"><h2>Особенности Windows: автозапуск, kill switch и ноутбук</h2><h3>Автозапуск без лишних действий</h3>
+<p>Активированный туннель регистрируется как служба с автоматическим запуском: после перезагрузки он поднимется ещё до появления экрана входа. Для удалённого доступа к рабочим ресурсам это удобно — RDP и корпоративные сервисы доступны сразу. Если хотите, чтобы после перезагрузки VPN был выключен, отключите туннель перед выключением компьютера. Окно WireGuard запускать не обязательно — оно лишь показывает состояние службы и живёт в системном трее.</p>
+<h3>Kill switch</h3>
+<p>Откройте туннель и нажмите «Изменить». Если конфиг направляет весь трафик в туннель (AllowedIPs со значениями 0.0.0.0/0 и ::/0), внизу окна появится флажок kill-switch. Включите его — и при разрыве соединения Windows не выпустит ни одного пакета мимо туннеля, в том числе DNS-запросы. Для ноутбука в публичных сетях это обязательная настройка. Флажок появляется только для конфигов с полным туннелированием. Что именно делает этот режим и чем отличается от Always-on — в статье <a href="/vpn/kill-switch-i-always-on-vpn">kill switch и Always-on VPN</a>.</p>
+<h3>Ноутбук: батарея, сон, чужие сети</h3>
+<p>WireGuard не шлёт служебных пакетов в простое, поэтому на автономность ноутбука почти не влияет — расход растёт только вместе с самим трафиком. После сна туннель восстанавливается по первому пакету. В чужих сетях — отельных, коворкинговых, аэропортовых — есть нюанс: если туннель активен, а рукопожатия нет, страница авторизации Wi-Fi не откроется. Выключите туннель, пройдите авторизацию и включите его снова.</p>
+<h3>Рабочий ноутбук и удалённая работа</h3>
+<p>Если компьютер выдан работодателем, уточните политику: на управляемых машинах могут быть свои VPN-клиенты и ограничения на установку программ. На личном ноутбуке WireGuard спокойно живёт рядом с корпоративным клиентом, но по умолчанию держит активным один туннель за раз — переключайтесь между ними, когда нужно. Сценарии и настройки для удалёнки собраны в статье <a href="/vpn/vpn-dlya-udalennoy-raboty">VPN для удалённой работы</a>.</p>
+<h3>Несколько компьютеров и устройств</h3>
+<p>Домашний ПК, рабочий ноутбук, телефон — каждому нужен свой конфиг; доступ Muhomor VPN рассчитан на 5 устройств. Один файл на двух машинах одновременно работать нормально не будет: ключ один, и сервер будет переключаться между ними. Добавьте второй компьютер в разделе «Устройства» на главной и импортируйте отдельный конфиг. Там же конфиг заменяют, если ноутбук продан или потерян.</p>
+<h3>Банки, Госуслуги и «умный режим»</h3>
+<p>Российские банки и Госуслуги иногда настороженно относятся к входу с зарубежного IP. Чтобы не выключать VPN каждый раз, у Muhomor VPN есть «умный режим» — профиль с раздельным туннелированием: трафик к российским сервисам идёт напрямую с реального IP, остальное — через шифрованный туннель. Список правил обновляется на стороне сервиса.</p>
+<h3>Скрытный режим</h3>
+<p>В сетях с жёстким фаерволом — например, в офисе или отеле — WireGuard может не установить рукопожатие. На странице доступа есть кнопка «Включить скрытный режим»: она выдаёт конфиг на базе AmneziaWG для бесплатного приложения AmneziaVPN, у которого трафик не имеет характерной сигнатуры WireGuard. Клиент AmneziaVPN есть и для Windows.</p></section>
+        <section class="block" id="tarify-muhomor-vpn-dlya-pk-i-noutbuka"><h2>Тарифы Muhomor VPN для ПК и ноутбука</h2><p>Первые 3 дня — бесплатно, по одному e-mail, без карты и без подписки. За это время можно проверить работу дома, в офисе и в дороге. Дальше — разовая оплата выбранного срока:</p>
+<div class="tbl"><table><thead><tr><th>Срок</th><th>Стоимость</th><th>В пересчёте на 30 дней</th></tr></thead><tbody>
+<tr><td>30 дней</td><td>320 ₽</td><td>320 ₽</td></tr>
+<tr><td>60 дней</td><td>610 ₽</td><td>305 ₽</td></tr>
+<tr><td>90 дней</td><td>899 ₽</td><td>около 300 ₽</td></tr>
+</tbody></table></div>
+<p>Оплата — через Robokassa: карты российских банков, включая МИР, и СБП; точный набор способов показывает страница оплаты. Подписок и автопродлений нет: срок закончился — доступ остановился, ничего не списывается. Для платного тарифа понадобится телефон — для чека. После оплаты доступ выдаётся автоматически, конфиг приходит на e-mail, а до 5 устройств — компьютер, ноутбук, телефон, планшет — и домашний роутер входят в стоимость.</p></section>
+        <section class="block" id="vpn-prilozhenie-na-pk-ili-na-routere"><h2>VPN-приложение на ПК или на роутере</h2><p>Для стационарного компьютера, который стоит дома и подключён кабелем, есть альтернатива приложению — туннель на роутере. Для ноутбука, который ездит с вами, приложение незаменимо.</p>
+<div class="tbl"><table><thead><tr><th>Критерий</th><th>Приложение на Windows</th><th>VPN на роутере</th></tr></thead><tbody>
+<tr><td>Где работает</td><td>Везде: дома, в офисе, в кафе</td><td>Только в домашней сети</td></tr>
+<tr><td>Кого защищает</td><td>Один компьютер</td><td>Все устройства дома, включая ТВ и приставки</td></tr>
+<tr><td>Kill switch</td><td>Флажок в свойствах туннеля</td><td>Зависит от прошивки роутера</td></tr>
+<tr><td>Нагрузка</td><td>Драйвер ядра, почти незаметна</td><td>Процессор роутера — на слабых моделях это предел скорости</td></tr>
+<tr><td>Лимит устройств</td><td>Каждый ПК — отдельный конфиг из пяти</td><td>Роутер занимает один конфиг на всю квартиру</td></tr>
+<tr><td>Настройка</td><td>Импорт за минуту</td><td>Нужен роутер с поддержкой WireGuard</td></tr>
+</tbody></table></div>
+<p>Практичное сочетание: роутер закрывает домашнюю сеть целиком, приложение на ноутбуке — всё за её пределами. Как принять решение — в статье <a href="/vpn/vpn-na-routere-ili-na-ustroystve">VPN на роутере или на устройстве</a>.</p></section>
+        <section class="block" id="chek-list-bezopasnosti-dlya-vpn-na-windows"><h2>Чек-лист безопасности для VPN на Windows</h2><ul>
+<li>Установщик — только официальный MSI. Перед запуском проверьте, что у файла есть цифровая подпись разработчика (вкладка «Цифровые подписи» в свойствах файла).</li>
+<li>Конфиг — это ключ. После импорта WireGuard хранит его в зашифрованном виде, а исходный файл из «Загрузок» удалите и не пересылайте в чаты.</li>
+<li>Включите флажок kill-switch, если работаете в публичных сетях.</li>
+<li>После первого подключения проверьте, что DNS-запросы и IPv6-трафик не уходят мимо туннеля: <a href="/vpn/kak-proverit-utechku-dns-ip">как проверить утечку DNS и IP</a>.</li>
+<li>Для чужих Wi-Fi-сетей выбирайте профиль «Общедоступная сеть» в Windows — так система выключает сетевое обнаружение и общий доступ к файлам.</li>
+<li>Брандмауэр Windows должен быть включён, обновления — установлены.</li>
+<li>На общем компьютере заведите отдельные учётные записи: управлять туннелями WireGuard по умолчанию могут только администраторы.</li>
+<li>Ноутбук потерян — замените его конфиг в разделе «Устройства» на главной и включите шифрование диска на новом.</li>
+</ul></section>
+        <section class="block" id="tipichnye-problemy-na-windows-i-chto-delat"><h2>Типичные проблемы на Windows и что делать</h2><p><strong>Нет рукопожатия.</strong> Проверьте синхронизацию времени и саму сеть: в отельном Wi-Fi нужно сначала пройти страницу авторизации. Если сеть режет UDP-трафик (бывает в офисах), включите скрытный режим. Антивирус с собственным фаерволом иногда мешает установке драйвера — добавьте WireGuard в исключения.</p>
+<p><strong>Значок сети показывает «Без доступа к интернету», хотя всё работает.</strong> Это особенность индикатора Windows, который не всегда корректно проверяет доступность сети через туннель. Если сайты открываются — игнорируйте.</p>
+<p><strong>Рукопожатие есть, сайты не открываются.</strong> Почти всегда DNS: отключите и снова включите туннель, проверьте, не стоит ли в системе сторонний DNS-фильтр, если не помогло — удалите туннель и импортируйте конфиг заново.</p>
+<p><strong>Медленно.</strong> Сравните скорость по кабелю и по Wi-Fi, проверьте, не идёт ли параллельно крупная загрузка или облачная синхронизация. Если разобраться не удалось, напишите в поддержку — Telegram-бот @muhomorvpn_bot — и приложите журнал из окна WireGuard (кнопка «Журнал»).</p></section>
+        <section class="cta">
+          <h2>Попробуйте Muhomor VPN — 3 дня бесплатно</h2>
+          <p>Ссылка доступа придёт на e-mail за минуту: добавьте её в Happ одной кнопкой или скачайте конфиг WireGuard. Без карты и автосписаний; на одном доступе — до 5 устройств и роутер.</p>
+          <div class="plans"><span>30 дней — 320 ₽</span><span>60 дней — 610 ₽</span><span>90 дней — 899 ₽</span><span>СБП и карты «Мир»</span></div>
+          <a class="btn" href="https://t.me/muhomorvpn_bot?start=w_site">Получить пробный доступ</a>
+        </section>
+        <section class="block faq" id="chastye-voprosy"><h2>Частые вопросы</h2><details><summary>Работает ли WireGuard на Windows 10 и Windows 11?</summary><p>Да, официальный клиент поддерживает обе версии на процессорах x64 и ARM64. Установщик MSI один, отдельных редакций для 10 и 11 нет.</p></details><details><summary>Нужны ли права администратора?</summary><p>Да — для установки программы и для управления туннелями: WireGuard ставит драйвер и создаёт системные службы. Обычные пользователи без прав администратора по умолчанию туннели не видят.</p></details><details><summary>Можно ли использовать один конфиг на ПК и ноутбуке?</summary><p>Не стоит: ключ у конфига один, и при одновременной работе сервер будет переключаться между машинами. Доступ рассчитан на 5 устройств — выпустите ноутбуку отдельный конфиг в разделе «Устройства».</p></details><details><summary>Как сделать, чтобы VPN включался сам при загрузке Windows?</summary><p>Ничего дополнительно делать не нужно: активный туннель работает как служба с автозапуском и поднимается при загрузке до входа в систему. Чтобы отключить автозапуск, деактивируйте туннель перед выключением.</p></details><details><summary>Почему в трее значок сети с предупреждением, хотя интернет есть?</summary><p>Индикатор Windows проверяет сеть своим способом и иногда не видит доступ через туннель. Это косметическая особенность — если сайты открываются, всё в порядке.</p></details><details><summary>VPN для ноутбука сильно сажает батарею?</summary><p>WireGuard молчит в простое и работает на уровне ядра, поэтому заметного влияния на автономность нет. Расход растёт вместе с самим трафиком, а не из-за шифрования.</p></details></section>
+      </article>
+      <aside class="side">
+        <div class="card">
+          <h3>Быстрый старт</h3>
+          <p class="legal" style="margin:0 0 12px">3 дня бесплатно, затем 30 дней за 320 ₽ по СБП или картой «Мир». Ссылка приходит на e-mail: Happ или WireGuard, без автосписаний.</p>
+          <a class="btn green" style="width:100%" href="https://t.me/muhomorvpn_bot?start=w_site">Получить доступ</a>
+          <div class="related" style="margin-top:12px"><a href="/vpn/besplatnyy-probnyy-vpn">Пробный VPN на 3 дня без карты</a><a href="/vpn/vpn-bez-podpiski">VPN без подписки: разовая оплата</a><a href="/vpn/probnaya-podpiska-happ">Пробный VPN для Happ</a></div>
+        </div>
+        <div class="card"><h3>Похожие статьи</h3><div class="related"><a href="/vpn/nastroit-wireguard-na-windows">Как настроить WireGuard на Windows 10 и 11</a><a href="/vpn/vpn-dlya-mac">VPN для Mac и MacBook на WireGuard: выбор и настройка</a><a href="/vpn/vpn-dlya-android">VPN для Android на WireGuard: Samsung, Xiaomi и другие</a><a href="/vpn/vpn-dlya-udalennoy-raboty">VPN для удалённой работы и фриланса</a><a href="/vpn/kill-switch-i-always-on-vpn">Kill switch и постоянное VPN-подключение: что это и как включить</a><a href="/vpn/wireguard-ne-podklyuchaetsya">WireGuard не подключается: диагностика и способы решения</a></div></div>
+        <div class="card"><h3>Разделы справочника</h3><div class="cats"><a href="/vpn#setup">Инструкции</a><a href="/vpn#devices" class="active">Устройства</a><a href="/vpn#tech">Технологии</a><a href="/vpn#security">Безопасность</a><a href="/vpn#usecases">Сценарии</a><a href="/vpn#pricing">Тарифы</a></div></div>
+      </aside>
+    </section>
+  </main>
+  <footer class="wrap">
+    <div class="cols">
+      <div><h4>Инструкции</h4><ul><li><a href="/vpn/happ-na-pk">Happ на компьютере: Windows, macOS и Linux</a></li><li><a href="/vpn/happ-na-televizore">Happ на телевизоре: Android TV и Apple TV</a></li><li><a href="/vpn/happ-ne-podklyuchaetsya">Happ не подключается: что проверить по шагам</a></li><li><a href="/vpn/happ-podpiska">Подписка Happ: что это такое и как добавить ссылку в приложение</a></li><li><a href="/vpn/kak-nastroit-amneziawg">Как настроить AmneziaWG и включить скрытный режим VPN</a></li><li><a href="/vpn/kak-poluchit-wireguard-konfig">Как получить WireGuard-конфиг и что с ним делать</a></li></ul></div>
+      <div><h4>Устройства</h4><ul><li><a href="/vpn/vpn-dlya-android">VPN для Android на WireGuard: Samsung, Xiaomi и другие</a></li><li><a href="/vpn/vpn-dlya-iphone">VPN для iPhone и iPad на WireGuard: выбор и подключение</a></li><li><a href="/vpn/vpn-dlya-mac">VPN для Mac и MacBook на WireGuard: выбор и настройка</a></li><li><a href="/vpn/vpn-dlya-routera">VPN для роутера: один туннель на весь дом</a></li><li><a href="/vpn/vpn-dlya-vsey-semyi">VPN для всей семьи: как защитить устройства родителей и детей</a></li><li><a href="/vpn/vpn-dlya-windows">VPN для Windows: ПК и ноутбук на WireGuard</a></li></ul></div>
+      <div><h4>Полезно знать</h4><ul><li><a href="/vpn/amneziawg-chto-eto">AmneziaWG: что это и чем отличается от WireGuard</a></li><li><a href="/vpn/bezopasnyy-dns-doh-dot">Безопасный DNS: что такое DoH и DoT и как их включить</a></li><li><a href="/vpn/chto-takoe-vpn-prostymi-slovami">Что такое VPN простыми словами: как это работает и зачем нужно</a></li><li><a href="/vpn/cifrovaya-gigiena-chek-list">Цифровая гигиена: чек-лист и правила на каждый день</a></li><li><a href="/vpn/kak-zashchitit-dannye-v-otkrytom-wifi">Как защитить данные в открытом Wi-Fi</a></li><li><a href="/vpn/kak-zashifrovat-trafik-na-smartfone">Как зашифровать трафик на смартфоне: iPhone и Android</a></li></ul></div>
+      <div><h4>Muhomor VPN</h4><ul>
+        <li><a href="https://t.me/muhomorvpn_bot?start=w_site">Попробовать 3 дня бесплатно</a></li>
+        <li><a href="https://t.me/muhomorvpn_bot?start=w_site">Мой доступ</a></li>
+        <li><a href="/downloads/wireguard/">Скачать WireGuard</a></li>
+        <li><a href="/vpn">Справочник VPN</a></li>
+        <li><a href="/oferta">Публичная оферта</a></li>
+        <li><a href="/privacy">Политика конфиденциальности</a></li>
+        <li><a href="/soglashenie">Пользовательское соглашение</a></li>
+        <li><a href="https://t.me/muhomorvpn_bot?start=w_site" rel="noopener">Поддержка в Telegram</a></li>
+      </ul></div>
+    </div>
+    <div>© 2026 Muhomor VPN. Используйте VPN законно и с уважением к правилам сервисов и сетей, к которым подключаетесь.</div>
+  </footer>
+<script>
+/* telegii.ru: источник перехода → метка для бота ?start=w_<src>. Без скрипта ссылки остаются w_site. */
+(function(){try{
+var K='w_src',TTL=864e5,src='',st=null;try{st=window.localStorage}catch(e){}
+function clean(v){v=String(v||'').toLowerCase().replace(/[^a-z0-9_]+/g,'_').replace(/_+/g,'_').replace(/^_|_$/g,'');return v.slice(0,30).replace(/_+$/,'')}
+function known(v){v=String(v||'').toLowerCase();
+if(/chatgpt|chat\.openai\.com/.test(v))return'chatgpt';
+if(/perplexity/.test(v))return'perplexity';
+if(/claude/.test(v))return'claude';
+if(/gemini|bard\.google/.test(v))return'gemini';
+if(/copilot/.test(v))return'copilot';
+if(/(^|[.\/])google(\.|$)|googlequicksearchbox/.test(v))return'google';
+if(/(^|[.\/])yandex(\.|$)|(^|\.)ya\.ru$/.test(v))return'yandex';
+if(/(^|\.)bing(\.|$)/.test(v))return'bing';
+if(/duckduckgo/.test(v))return'duckduckgo';
+if(/(^|\.)t\.me$|telegram|^tg$/.test(v))return'tg';
+return''}
+var utm=new URLSearchParams(location.search).get('utm_source'),ref=document.referrer,host='',internal=false;
+if(utm){src=known(utm)||clean(utm)||'other'}
+else if(!ref){src='direct'}
+else{try{host=new URL(ref).hostname.toLowerCase()}catch(e){}
+if(host&&host===location.hostname){internal=true;try{var o=JSON.parse(st.getItem(K));if(o&&o.s&&Date.now()-o.t<TTL)src=o.s}catch(e){}}
+else{src=known(host)||'other'}}
+if(!/^[a-z0-9_]{1,30}$/.test(src))return;
+if(!internal){try{st.setItem(K,JSON.stringify({s:src,t:Date.now()}))}catch(e){}}
+var a=document.querySelectorAll('a[href*="t.me/muhomorvpn_bot?start=w_site"]');
+for(var i=0;i<a.length;i++){a[i].setAttribute('href',a[i].getAttribute('href').replace('start=w_site','start=w_'+src))}
+}catch(e){}})();
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 28 340 352" width="340" height="352">
+  <defs>
+    <radialGradient id="cap" cx="36%" cy="26%" r="80%">
+      <stop offset="0" stop-color="#ff7a5c"/>
+      <stop offset=".42" stop-color="#ef3b24"/>
+      <stop offset=".78" stop-color="#cc2214"/>
+      <stop offset="1" stop-color="#9c130a"/>
+    </radialGradient>
+    <linearGradient id="capShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset=".62" stop-color="#5a0600" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5a0600" stop-opacity=".42"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="38%" cy="32%" r="72%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".62" stop-color="#fbf5ea"/>
+      <stop offset="1" stop-color="#e2d3bc"/>
+    </radialGradient>
+    <linearGradient id="stem" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset=".5" stop-color="#f6ebd6"/>
+      <stop offset="1" stop-color="#d7bd95"/>
+    </linearGradient>
+    <linearGradient id="skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="1" stop-color="#eadbc0"/>
+    </linearGradient>
+    <linearGradient id="gills" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9d6b6"/>
+      <stop offset="1" stop-color="#cfb48a"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#1f7a35"/>
+      <stop offset="1" stop-color="#6bd56f"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="soft2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="capClip"><path d="M52 214C44 128 118 50 200 48c82 2 156 80 148 166-44 26-252 26-296 0z"/></clipPath>
+  </defs>
+
+  <!-- sticker outline -->
+  <g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round">
+    <path d="M52 214C44 128 118 50 200 48c82 2 156 80 148 166-44 26-252 26-296 0z"/>
+    <path d="M166 226c-3 44-9 88-18 124 30 16 76 16 106 0-9-36-15-80-18-124z"/>
+    <path d="M110 364c10-26 18-46 30-60 2 20 6 38 12 56zM292 364c-10-26-18-46-30-60-2 20-6 38-12 56z"/>
+    <ellipse cx="201" cy="356" rx="96" ry="16"/>
+  </g>
+
+  <!-- grass behind -->
+  <path d="M112 362c8-24 16-42 28-56 2 20 6 38 12 56z" fill="url(#grass)"/>
+  <path d="M290 362c-8-24-16-42-28-56-2 20-6 38-12 56z" fill="url(#grass)"/>
+
+  <!-- stem -->
+  <path d="M166 226c-3 44-9 88-18 124 30 16 76 16 106 0-9-36-15-80-18-124z" fill="url(#stem)"/>
+  <path d="M226 236c3 40 8 78 16 110" stroke="#c9ab7f" stroke-width="5" stroke-linecap="round" fill="none" opacity=".45"/>
+  <ellipse cx="201" cy="234" rx="40" ry="12" fill="#a8885c" opacity=".55" filter="url(#soft2)"/>
+
+  <!-- skirt -->
+  <path d="M158 256c14 12 72 12 86 0 8 16 6 30-4 34-10-6-22 4-39-2-17 6-29-4-39 2-10-4-12-18-4-34z" fill="url(#skirt)" stroke="#dcc7a4" stroke-width="2"/>
+
+  <!-- grass front -->
+  <path d="M132 364c2-20 6-34 14-44 2 16 4 30 4 44z" fill="url(#grass)"/>
+  <path d="M268 364c-2-20-6-34-14-44-2 16-4 30-4 44z" fill="url(#grass)"/>
+  <ellipse cx="201" cy="357" rx="78" ry="11" fill="#2f8f43"/>
+  <path d="M150 358c6-14 12-22 20-28 0 10 1 20 4 30zM250 358c-6-14-12-22-20-28 0 10-1 20-4 30zM184 360c2-12 6-20 12-26 2 10 2 18 0 26zM214 360c-2-12-6-20-12-26-2 10-2 18 0 26z" fill="#3fb04f"/>
+
+  <!-- gills under cap -->
+  <path d="M60 216c40 22 240 22 280 0-18 24-78 34-140 34S78 240 60 216z" fill="url(#gills)"/>
+  <g stroke="#b99a6b" stroke-width="2" stroke-linecap="round" opacity=".7">
+    <path d="M200 244l0-8M176 243l-6-8M152 240l-12-9M128 236l-18-9M224 243l6-8M248 240l12-9M272 236l18-9M104 230l-18-8M296 230l18-8"/>
+  </g>
+
+  <!-- cap -->
+  <path d="M52 214C44 128 118 50 200 48c82 2 156 80 148 166-44 26-252 26-296 0z" fill="url(#cap)"/>
+  <g clip-path="url(#capClip)">
+    <rect x="40" y="40" width="320" height="200" fill="url(#capShade)"/>
+    <ellipse cx="150" cy="104" rx="70" ry="30" transform="rotate(-26 150 104)" fill="#fff" opacity=".26" filter="url(#soft)"/>
+    <!-- spots: shadow then spot -->
+    <g fill="#6d0a02" opacity=".28">
+      <ellipse cx="202" cy="92" rx="25" ry="17"/>
+      <ellipse cx="136" cy="134" rx="19" ry="15"/>
+      <ellipse cx="268" cy="130" rx="21" ry="15"/>
+      <ellipse cx="94" cy="184" rx="13" ry="10"/>
+      <ellipse cx="312" cy="182" rx="14" ry="10"/>
+      <ellipse cx="204" cy="166" rx="28" ry="18"/>
+      <ellipse cx="150" cy="202" rx="12" ry="7"/>
+      <ellipse cx="256" cy="202" rx="12" ry="7"/>
+      <ellipse cx="330" cy="144" rx="8" ry="7"/>
+      <ellipse cx="80" cy="142" rx="8" ry="7"/>
+      <ellipse cx="236" cy="66" rx="10" ry="6"/>
+    </g>
+    <g fill="url(#spot)">
+      <ellipse cx="200" cy="89" rx="24" ry="16"/>
+      <ellipse cx="134" cy="131" rx="18" ry="14"/>
+      <ellipse cx="266" cy="127" rx="20" ry="14"/>
+      <ellipse cx="93" cy="181" rx="12" ry="9"/>
+      <ellipse cx="310" cy="179" rx="13" ry="9"/>
+      <ellipse cx="202" cy="163" rx="27" ry="17"/>
+      <ellipse cx="149" cy="199" rx="11" ry="6"/>
+      <ellipse cx="254" cy="199" rx="11" ry="6"/>
+      <ellipse cx="329" cy="141" rx="7" ry="6"/>
+      <ellipse cx="80" cy="139" rx="7" ry="6"/>
+      <ellipse cx="235" cy="63" rx="9" ry="5"/>
+    </g>
+    <ellipse cx="120" cy="96" rx="20" ry="8" transform="rotate(-34 120 96)" fill="#fff" opacity=".55"/>
+  </g>
+  <path d="M52 214C44 128 118 50 200 48c82 2 156 80 148 166" fill="none" stroke="#7d0e05" stroke-width="3" opacity=".35"/>
+</svg>
