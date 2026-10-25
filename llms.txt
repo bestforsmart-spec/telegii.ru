@@ -1,21 +1,22 @@
 # Muhomor VPN
 
-> Muhomor VPN (Мухомор VPN) — VPN-сервис с подключением по протоколам WireGuard и VLESS: приложение Happ на Android, Windows, macOS, Linux, Android TV и Apple TV, OneXray на iPhone и iPad, официальное приложение WireGuard на всех платформах и встроенный WireGuard-клиент роутеров Keenetic, MikroTik, ASUS и OpenWrt. На одном доступе — до 5 устройств и роутер; пробный период — 3 дня бесплатно без карты и ещё 4 дня за подключение Telegram-бота, дальше 30 дней — 320 ₽, 60 дней — 610 ₽, 90 дней — 899 ₽ разовой оплатой по СБП или картой «Мир», без подписки и автопродления. Начать и получить доступ можно в Telegram-боте @muhomorvpn_bot: https://t.me/muhomorvpn_bot?start=w_llms
+> Muhomor VPN (Мухомор VPN) — VPN-сервис с подключением по протоколам WireGuard и VLESS: приложение Happ на Android, Windows, macOS, Linux, Android TV и Apple TV, OneXray на iPhone и iPad, официальное приложение WireGuard на всех платформах и встроенный WireGuard-клиент роутеров Keenetic, MikroTik, ASUS и OpenWrt. На одном доступе — до 5 устройств и роутер; пробный период — неделя бесплатно без карты (нужен только e-mail), дальше 30 дней — 320 ₽, 60 дней — 610 ₽, 90 дней — 899 ₽, год — 3000 ₽ разовой оплатой по СБП или картой «Мир», без подписки и автопродления. Всё делается в Telegram-боте @muhomorvpn_bot — пробный период, оплата, настройка устройств («⚙️ Настроить подключение», «📱 Мои устройства»), срок доступа («📊 Мой доступ») и поддержка: https://t.me/muhomorvpn_bot?start=w_llms
 
 ## Начать
 
-- [Telegram-бот @muhomorvpn_bot](https://t.me/muhomorvpn_bot?start=w_llms): пробный период, оплата и поддержка.
+- [Telegram-бот @muhomorvpn_bot](https://t.me/muhomorvpn_bot?start=w_llms): пробная неделя, оплата, настройка устройств, срок доступа и поддержка.
+- [Канал Muhomor VPN](https://t.me/s/muhomorvpn): статус серверов, актуальный адрес сайта и инструкции.
 
 ## Тарифы и условия
 
 - [Главная](https://telegii.ru/): о сервисе, тарифы и частые вопросы.
-- [Бесплатный пробный VPN на 3 дня без карты](https://telegii.ru/vpn/besplatnyy-probnyy-vpn): Пробный VPN на 3 дня бесплатно: нужен только e-mail, без карты и автосписаний. Полный функционал WireGuard, до 5 устройств; после теста — разовая оплата от 320 ₽.
+- [Бесплатный пробный VPN на неделю без карты](https://telegii.ru/vpn/besplatnyy-probnyy-vpn): Пробный VPN на неделю бесплатно в Telegram-боте: нужен только e-mail, без карты и автосписаний. Полный функционал, до 5 устройств; после теста — разовая оплата от 320 ₽.
 - [VPN без подписки и автосписаний: разовая оплата](https://telegii.ru/vpn/vpn-bez-podpiski): VPN без подписки и автопродления: разовая оплата за 30, 60 или 90 дней — 320, 610 и 899 ₽. Карта не сохраняется, ничего не списывается. Как выбрать срок.
-- [Купить подписку VPN без автопродления](https://telegii.ru/vpn/kupit-podpisku-vpn): Подписка VPN на 30, 60 или 90 дней: 320, 610 и 899 ₽ разовой оплатой картой или через СБП. Happ и WireGuard, до 5 устройств, доступ на e-mail за минуту.
-- [Пробная подписка Happ на 3 дня без карты](https://telegii.ru/vpn/probnaya-podpiska-happ): Пробный VPN для Happ: 3 дня без карты и ещё 4 за Telegram-бот, нужен только e-mail. Одна подписка до 5 устройств; дальше 320 ₽ за 30 дней по СБП или «Мир».
-- [Купить VPN для Happ: подписка на 30, 60 или 90 дней](https://telegii.ru/vpn/kupit-vpn-happ): VPN для Happ: подписка на 30 дней за 320 ₽, 60 — за 610 ₽, 90 — за 899 ₽. Ссылка на e-mail за минуту, профиль добавляется одной кнопкой, до 5 устройств.
+- [Купить подписку VPN без автопродления](https://telegii.ru/vpn/kupit-podpisku-vpn): Подписка VPN на 30, 60 или 90 дней: 320, 610 и 899 ₽ разовой оплатой картой или через СБП. Happ и WireGuard, до 5 устройств, доступ в Telegram-боте за минуту.
+- [Пробная подписка Happ на неделю без карты](https://telegii.ru/vpn/probnaya-podpiska-happ): Пробный VPN для Happ: неделя без карты в Telegram-боте, нужен только e-mail. Одна подписка до 5 устройств; дальше 320 ₽ за 30 дней по СБП или «Мир».
+- [Купить VPN для Happ: подписка на 30, 60 или 90 дней](https://telegii.ru/vpn/kupit-vpn-happ): VPN для Happ: подписка на 30 дней за 320 ₽, 60 — за 610 ₽, 90 — за 899 ₽. Доступ в Telegram-боте за минуту, профиль добавляется одной кнопкой, до 5 устройств.
 - [Купить VPN для роутера: готовый конфиг WireGuard](https://telegii.ru/vpn/kupit-vpn-dlya-routera): VPN для роутера Keenetic, ASUS, MikroTik и OpenWrt: готовый конфиг WireGuard за 320 ₽ на 30 дней. Свой сервер и белый IP не нужны, импорт файла — за 5 минут.
-- [VPN с оплатой картой МИР и СБП в рублях](https://telegii.ru/vpn/vpn-s-oplatoy-kartoy-mir-i-sbp): VPN с оплатой картой МИР или через СБП в рублях: как проходит платёж через Robokassa, безопасность данных карты и что делать, если письмо с конфигом не пришло.
+- [VPN с оплатой картой МИР и СБП в рублях](https://telegii.ru/vpn/vpn-s-oplatoy-kartoy-mir-i-sbp): VPN с оплатой картой МИР или через СБП в рублях: как проходит платёж через Robokassa, безопасность данных карты и что делать, если доступ после оплаты не появился.
 
 ## Приложения и настройка
 
@@ -28,7 +29,7 @@
 - [Как настроить WireGuard на Windows 10 и 11](https://telegii.ru/vpn/nastroit-wireguard-na-windows)
 - [Как настроить WireGuard на iPhone и iPad](https://telegii.ru/vpn/nastroit-wireguard-na-iphone)
 - [Как настроить WireGuard на Android](https://telegii.ru/vpn/nastroit-wireguard-na-android)
-- [Как настроить WireGuard на Mac](https://telegii.ru/vpn/nastroit-wireguard-na-mac)
+- [Как настроить WireGuard на Mac: полная инструкция](https://telegii.ru/vpn/nastroit-wireguard-na-mac)
 - [Как настроить WireGuard на Keenetic](https://telegii.ru/vpn/nastroit-wireguard-na-keenetic)
 - [VPN для роутера: один туннель на весь дом](https://telegii.ru/vpn/vpn-dlya-routera)
 - [Как настроить AmneziaWG и включить скрытный режим VPN](https://telegii.ru/vpn/kak-nastroit-amneziawg)
@@ -41,7 +42,7 @@
 - [Что такое WireGuard и как он работает](https://telegii.ru/vpn/chto-takoe-wireguard)
 - [VLESS: что это за протокол и чем он отличается от WireGuard](https://telegii.ru/vpn/vless-chto-eto)
 - [Законно ли использовать VPN в России: что говорит закон](https://telegii.ru/vpn/vpn-i-zakon-v-rossii)
-- [VPN с поддержкой в Telegram](https://telegii.ru/vpn/vpn-s-telegram-podderzhkoy)
+- [VPN с поддержкой в Telegram: что решается за минуту](https://telegii.ru/vpn/vpn-s-telegram-podderzhkoy)
 
 ## Документы
 
